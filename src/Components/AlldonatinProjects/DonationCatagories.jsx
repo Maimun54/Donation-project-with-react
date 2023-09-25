@@ -3,7 +3,7 @@ import DonationCard from "./DonationCard";
 
 
 const DonationCatagories = ({catagoriesCards}) => {
- console.log(catagoriesCards)
+//  console.log(catagoriesCards)
 
     return (
         <div>

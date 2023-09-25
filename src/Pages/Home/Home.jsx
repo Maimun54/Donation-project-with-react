@@ -7,7 +7,7 @@ import Banner from "../../Components/Banner";
 const Home = () => {
 
     const catagoriesCards = useLoaderData()
-    console.log(catagoriesCards)
+   
     return (
         <div>
           <Banner></Banner>
