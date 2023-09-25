@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div>
             <div  >
-            <nav className="flex justify-between py-5 px-10 items-center ">
+        <nav className="flex justify-between py-10 px-2 md:px-10 items-center ">
          <div className="w-[80%]">
             <img src="Logo.png" alt="" />
          </div>

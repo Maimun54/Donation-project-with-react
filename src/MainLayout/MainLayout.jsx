@@ -6,7 +6,9 @@ const MainLayout = () => {
         <div>
             <Header></Header>
             
+            <div className="py-10">
             <Outlet></Outlet>
+            </div>
         </div>
     );
 };
