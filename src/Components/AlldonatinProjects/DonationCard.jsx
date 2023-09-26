@@ -10,7 +10,9 @@ const DonationCard = ({catagories}) => {
     <div className="card bg-base-100 shadow-xl"
     style={{backgroundColor:card_bg}} >
   
-  <div><img className="w-full" src={image} alt="image" /></div>
+  <div><img className="w-full" src={image} alt="image" />
+        
+  </div>
 
   <div  className="px-2 py-2">
    <div className=" w-20 items-center "

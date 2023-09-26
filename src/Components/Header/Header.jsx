@@ -6,8 +6,8 @@ const Header = () => {
         <div>
             <div  >
         <nav className="flex justify-between py-10 px-2 md:px-10 items-center ">
-         <div className="w-[80%]">
-            <img src="Logo.png" alt="" />
+         <div className="">
+            <img src="./Logo.png" alt="" />
          </div>
                 <ul className="flex gap-5">
                     <li><NavLink

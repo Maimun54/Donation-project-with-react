@@ -33,8 +33,9 @@ const CatagoryDetailsCard = ({catagoriCard}) => {
         <div className="flex justify-center items-center h-[60vh] py-28 px-20">
             <div > 
               <div>
-            <div>
+            <div className='relative'>
             <img className="w-[800px] md:h-[400px] " src={image} alt="" />
+            <div className="w-[800px] h-[83px] border bg-opacity-60 hero-overlay absolute top-80 ;"></div>
             </div>
                 <div className="opacity-80"></div>
                 <button onClick={handleAddDonatin}  className="  absolute md:p-3 bottom-52 md:bottom-56 lg:bottom-60 text-white" style={{backgroundColor:text_color}}>Donate {price}</button>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Card = ({card}) => {
@@ -5,10 +6,13 @@ const Card = ({card}) => {
     return (
         <div>
     
-    <div className="card flex card-compact w-96 bg-base-100 shadow-xl"
+    <div className="   bg-base-100 shadow-xl"
     style={{backgroundColor:card_bg}} >
   
-  <div><img className="w-96" src={image} alt="image" /></div>
+  <div className="lg:flex md:flex">
+  <div>
+    <img className="w-full" src={image} alt="image" />
+  </div>
 
   <div  className="px-2 py-2">
    <div className=" w-20 items-center "
@@ -20,9 +24,14 @@ const Card = ({card}) => {
     style={{color:text_color}}
     >
     {title}</p>
+    <p>{price}</p>
+   <Link to={`/catagories/${id}`}>
+   <button className="btn btn-primary mt-5" style={{backgroundColor:text_color}}>View Details</button>
+   </Link>
 
     
    
+  </div>
   </div>
 </div>
     
