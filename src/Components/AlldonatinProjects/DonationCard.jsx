@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const DonationCard = ({catagories}) => {
-    const {id,image,title,category,category_bg,card_bg,text_color,button_bg,description,price} = catagories
+    const {id,image,title,category,category_bg,card_bg,text_color,button_bg,description,price} = catagories || {}
     
     return (
         <div>

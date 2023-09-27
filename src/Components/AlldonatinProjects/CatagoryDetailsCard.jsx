@@ -3,12 +3,12 @@ import swal from 'sweetalert';
 
 const CatagoryDetailsCard = ({catagoriCard}) => {
   
-  const {id,image,title,category,category_bg,card_bg,text_color,button_bg,description,price} = catagoriCard
+  const {id,image,title,category,category_bg,card_bg,text_color,button_bg,description,price} = catagoriCard || {}
   
   const handleAddDonatin =()=>{
     console.log(catagoriCard)
     const addedDonation =[];
-    const donationItem =JSON.parse(localStorage.getItem('Donation'))
+    const donationItem =JSON.parse(localStorage.getItem('Donation') )
     if(!donationItem){
          addedDonation.push(catagoriCard)
          localStorage.setItem('Donation',JSON.stringify(addedDonation))
@@ -30,15 +30,15 @@ const CatagoryDetailsCard = ({catagoriCard}) => {
     }
   }
     return (
-        <div className="flex justify-center items-center h-[60vh] py-28 px-20">
-            <div > 
+        <div >
+            <div className=" justify-center items-center  px-20 "> 
               <div>
             <div className='relative'>
-            <img className="w-[800px] md:h-[400px] " src={image} alt="" />
-            <div className="w-[800px] h-[83px] border bg-opacity-60 hero-overlay absolute top-80 ;"></div>
+            <img className="w-full h-[400px] " src={image} alt="" />
+            <div className="w-full h-[110px]  bg-opacity-60 hero-overlay absolute top-72 ;"></div>
             </div>
                 <div className="opacity-80"></div>
-                <button onClick={handleAddDonatin}  className="  absolute md:p-3 bottom-52 md:bottom-56 lg:bottom-60 text-white" style={{backgroundColor:text_color}}>Donate {price}</button>
+                <button onClick={handleAddDonatin}  className="  absolute md:p-3 -bottom-10 md:-bottom-10 lg:-bottom-10 xl:bottom-24 text-white" style={{backgroundColor:text_color}}>Donate {price}</button>
 
               </div>
               <div>
