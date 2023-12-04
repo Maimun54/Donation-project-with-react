@@ -4,6 +4,7 @@ import CatagoryDetailsCard from "./CatagoryDetailsCard";
 
 
 const CatagoryDetails = () => {
+    
     const {id} =useParams()
     const [catagoriCard,setCatagoriCard]=useState({})
     

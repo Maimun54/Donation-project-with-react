@@ -31,7 +31,7 @@ const CatagoryDetailsCard = ({catagoriCard}) => {
   }
     return (
         <div >
-            <div className=" justify-center items-center  px-20 "> 
+          <div className=" justify-center items-center  px-20 "> 
               <div>
             <div className='relative'>
             <img className="w-full h-[200px] md:h-[400px] lg:h-[400px] " src={image} alt="" />
